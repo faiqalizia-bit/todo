@@ -1,4 +1,4 @@
-const TodoItem = ({ todo, index, onEdit, onDelete }) => {
+const TodoItem = ({ todo, onEdit, onDelete }) => {
   return (
     <div
       className="flex items-center justify-between bg-white

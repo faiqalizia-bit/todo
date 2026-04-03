@@ -13,16 +13,16 @@ export const TodoProvider = ({ children }) => {
   }, [todos]);
 
   const addTodo = (text) => {
-    setTodos([...todos, { text }]);
+    setTodos([...todos, {text}]);
   };
 
   const deleteTodo = (index) => {
-    setTodos(todos.filter(( i) => i !== index));
+    setTodos(todos.filter(( _,i) => i !== index));
   };
 
   const editTodo = (index, newText) => {
     setTodos(
-      todos.map((todo, i) => (i === index ? { text: newText } : todo))
+      todos.map((todo, i) => (i === index ?  newText  : todo))
     );
   };
 

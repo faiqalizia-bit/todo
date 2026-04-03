@@ -7,7 +7,7 @@ const TodoForm = ({ editIndex, setEditIndex }) => {
 
   useEffect(() => {
     if (editIndex !== null && todos[editIndex]) {
-      setText(todos[editIndex].text);
+      setText( todos[editIndex].text);
     } else {
       setText("");
     }
